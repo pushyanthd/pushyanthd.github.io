@@ -30,7 +30,7 @@ The resume placeholder becomes a working download link. Until then, no missing P
 
 ## Publish free on GitHub Pages
 
-Use a public repository named `flashpd.github.io`. Push this directory to its `main` branch. In **Settings → Pages**, select **Deploy from a branch**, **main**, and **/(root)**, then save. The site will be at https://flashpd.github.io/ when GitHub finishes deployment. Publishing from the branch needs no custom workflow or paid service.
+Use a public repository named `pushyanthd.github.io`. Push this directory to its `main` branch. In **Settings → Pages**, select **Deploy from a branch**, **main**, and **/(root)**, then save. The site will be at https://pushyanthd.github.io/ when GitHub finishes deployment. Publishing from the branch needs no custom workflow or paid service.
 
 GitHub Pages documentation: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
 
