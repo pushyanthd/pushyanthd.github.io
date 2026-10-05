@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pushyanth Damarapati — AI and ML engineering projects in retrieval evaluation, document intelligence, machine learning infrastructure, and agent systems.">
+  <meta name="theme-color" content="#112e54">
+  <meta property="og:title" content="Pushyanth Damarapati | AI & ML Engineering">
+  <meta property="og:description" content="Retrieval, document intelligence, machine learning, and agent systems. I build the infrastructure around models: evidence, evaluation, permissions, and recovery.">
+  <meta property="og:type" content="website">
+  <title>Pushyanth Damarapati | AI & ML Engineering</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23112e54'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial,sans-serif' font-size='27' font-weight='700' fill='white'%3EPD%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/main.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Pushyanth Damarapati, back to top"><span class="monogram">PD</span><span>Pushyanth Damarapati</span></a>
+      <nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#about">About</a><a href="#resume">Resume</a><a href="#contact">Contact</a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-main"><p class="eyebrow">AI &amp; ML engineering</p><h1 id="hero-title">Building AI systems you can inspect.</h1><p class="hero-intro">Retrieval, document intelligence, machine learning, and agent systems. I build the infrastructure around models: evidence, evaluation, permissions, and recovery.</p><div class="hero-actions"><a class="button primary" href="#projects">Explore my projects</a><a class="button secondary" href="#resume">Resume</a></div></div>
+      <aside class="hero-aside" aria-label="Portfolio focus"><div class="aside-heading"><span>Engineering focus</span><span class="small-mark">PD / 01</span></div><p class="aside-title">From model output<br>to dependable systems.</p><ol class="focus-list"><li><span>01</span><div>Evidence<span class="focus-description">Make outputs inspectable</span></div></li><li><span>02</span><div>Evaluation<span class="focus-description">Measure before promoting</span></div></li><li><span>03</span><div>Control<span class="focus-description">Keep actions reviewable</span></div></li></ol><div class="aside-footer"><span>5 public projects</span><a href="https://github.com/FlashPD">FlashPD on GitHub</a></div></aside>
+    </section>
+    <div class="topic-strip"><div class="container"><span>Retrieval systems</span><span>Document intelligence</span><span>ML infrastructure</span><span>Agent systems</span></div></div>
+    <section class="section container" id="projects" aria-labelledby="projects-title"><div class="section-heading"><div><p class="eyebrow">01 / Selected work</p><h2 id="projects-title">Engineering in practice.</h2></div><p>Explore the systems, decisions,<br>and evidence behind the code.</p></div><div class="projects-grid"><article class="project featured">
+      <div class="project-copy"><div class="project-top"><span class="project-number">01</span><span class="eyebrow">Document intelligence</span></div>
+      <h3>Document Intelligence Workbench</h3><p>A local invoice workspace that connects extracted fields to page evidence. Reviewers can correct a version, approve it, and export the exact approved record.</p>
+      <ul class="tags" aria-label="Technologies"><li>Python</li><li>SQLite</li><li>Docker</li><li>OCR</li></ul>
+      <div class="project-links"><a href="https://github.com/FlashPD/document-intelligence-workbench">View repository</a><a href="https://github.com/FlashPD/document-intelligence-workbench/blob/main/docs/engineering-case-study.md">Read project notes</a></div>
+      <details><summary>Engineering details</summary><p>Built around human review, isolated parsing, auditable revisions, and recoverable processing. The project compares deterministic extraction with a local language model and keeps rules as the default after measuring model regression.</p><span class="project-status">Experimental portfolio release</span></details></div><figure class="project-image"><img src="assets/workbench.png" width="1440" height="1013" loading="lazy" alt="Document review workspace showing an invoice beside evidence-linked extracted fields"><figcaption>Recorded OCR demo on a fictional invoice.</figcaption></figure>
+    </article>
+<article class="project">
+      <div class="project-copy"><div class="project-top"><span class="project-number">02</span><span class="eyebrow">Retrieval &amp; evaluation</span></div>
+      <h3>RAG Evaluation Platform</h3><p>A reproducible comparison of sparse, dense, hybrid, and reranked retrieval, with confidence intervals and regression gates to make quality changes measurable.</p>
+      <ul class="tags" aria-label="Technologies"><li>FastAPI</li><li>pgvector</li><li>BEIR</li><li>OpenTelemetry</li></ul>
+      <div class="project-links"><a href="https://github.com/FlashPD/rag-eval-platform">View repository</a><a href="https://github.com/FlashPD/rag-eval-platform/blob/main/docs/model_card.md">Read project notes</a></div>
+      <details><summary>Engineering details</summary><p>Evaluations across SciFact, NFCorpus, and FiQA show that the best retrieval strategy changes with the domain. The pipeline connects versioned inputs, cited answers, evaluation reports, and observability.</p><span class="project-status">Published benchmark reports</span></details></div>
+    </article>
+<article class="project">
+      <div class="project-copy"><div class="project-top"><span class="project-number">03</span><span class="eyebrow">ML infrastructure</span></div>
+      <h3>Real-Time ML Platform</h3><p>NYC taxi-duration modeling with validated data, point-in-time features, guarded model promotion, and online prediction serving on Kubernetes.</p>
+      <ul class="tags" aria-label="Technologies"><li>MLflow</li><li>Kubernetes</li><li>FastAPI</li><li>Redpanda</li></ul>
+      <div class="project-links"><a href="https://github.com/FlashPD/realtime-ml-platform">View repository</a><a href="https://github.com/FlashPD/realtime-ml-platform/blob/main/docs/portfolio-walkthrough.md">Read project notes</a></div>
+      <details><summary>Engineering details</summary><p>Combines batch training with MLflow model management and FastAPI serving. Includes local load and broker-recovery experiments with documented limits; the model uses completed-trip distance and is not a pre-trip ETA estimator.</p><span class="project-status">Batch training &amp; online serving</span></details></div>
+    </article>
+<article class="project">
+      <div class="project-copy"><div class="project-top"><span class="project-number">04</span><span class="eyebrow">Agent security</span></div>
+      <h3>Secure Agent Platform</h3><p>An architecture plan for a workplace-agent lab with application-enforced permissions, reviewable actions, and reproducible prompt-injection evaluations.</p>
+      <ul class="tags" aria-label="Technologies"><li>Agent architecture</li><li>Scoped permissions</li><li>Evaluation design</li></ul>
+      <div class="project-links"><a href="https://github.com/FlashPD/secure-agent-platform">View repository</a><a href="https://github.com/FlashPD/secure-agent-platform/blob/main/arch_plan/secure-agent-platform-plan.md">Read project notes</a></div>
+      <details><summary>Engineering details</summary><p>The public repository currently contains the architecture and implementation plan. It proposes a phased study of legitimate task completion and attack resistance, beginning with structured generation, a frozen task suite, and one tool execution boundary.</p><span class="project-status">Architecture planned</span></details></div>
+    </article>
+<article class="project">
+      <div class="project-copy"><div class="project-top"><span class="project-number">05</span><span class="eyebrow">Research agents</span></div>
+      <h3>Deep Research</h3><p>A research backend that takes a question through an approved plan, parallel investigations, evidence review, and a cited report.</p>
+      <ul class="tags" aria-label="Technologies"><li>FastAPI</li><li>Pydantic</li><li>Responses API</li><li>Playwright</li></ul>
+      <div class="project-links"><a href="https://github.com/FlashPD/deep-research">View repository</a><a href="https://github.com/FlashPD/deep-research/blob/main/docs/case-study.md">Read project notes</a></div>
+      <details><summary>Engineering details</summary><p>Application code owns budgets, tool access, recovery, and report validation. Published development examples show quick briefs, broader comparisons, and technical research with recorded evidence and cost.</p><span class="project-status">Published development examples</span></details></div>
+    </article></div><a class="all-projects" href="https://github.com/FlashPD?tab=repositories">Browse all repositories on GitHub</a></section>
+    <section class="about-section" id="about" aria-labelledby="about-title"><div class="container about-grid"><div><p class="eyebrow">02 / About</p><h2 id="about-title">The work behind<br>the models.</h2></div><div class="about-copy"><p class="about-lead">My projects explore what makes AI systems useful beyond a model response. That means tracing outputs to evidence, measuring quality before changing a pipeline, and giving people control over consequential actions.</p><p>Across this portfolio, the recurring questions are practical: Can an output be checked? Does a change improve the measured result? Can an interrupted workflow recover?</p><a href="https://github.com/FlashPD">Follow my work on GitHub</a></div></div></section>
+    <section class="section container resume-section" id="resume" aria-labelledby="resume-title"><div><p class="eyebrow">03 / Background</p><h2 id="resume-title">Resume</h2><p>My resume will be available here soon. In the meantime, explore my projects and engineering notes.</p></div><div class="resume-card"><div class="resume-document" aria-hidden="true"><svg viewBox="0 0 40 48" fill="none"><path d="M8 2h17l11 11v33H8z" stroke="currentColor" stroke-width="2"/><path d="M25 2v12h11M14 24h16M14 31h16M14 38h10" stroke="currentColor" stroke-width="2"/></svg></div><div><h3>Pushyanth Damarapati</h3><p>Coming soon</p></div><span class="resume-pending">PDF coming soon</span></div></section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-inner"><div><p class="eyebrow">04 / Contact</p><h2 id="contact-title">Let’s connect.</h2><p>Have a question about a project?<br>You can find my work and discussions on GitHub.</p></div><div class="contact-links"><a class="button primary" href="https://github.com/FlashPD">Connect on GitHub</a></div></div></section>
+  </main>
+  <footer class="container site-footer"><p>© <span id="year">2026</span> Pushyanth Damarapati</p><p>Built with care. Hosted on GitHub Pages.</p><a href="#top">Back to top</a></footer>
+</body>
+</html>

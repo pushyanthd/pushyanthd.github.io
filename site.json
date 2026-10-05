@@ -1,0 +1,89 @@
+{
+  "name": "Pushyanth Damarapati",
+  "initials": "PD",
+  "github": "FlashPD",
+  "focus": "AI & ML engineering",
+  "headline": "Building AI systems you can inspect.",
+  "intro": "Retrieval, document intelligence, machine learning, and agent systems. I build the infrastructure around models: evidence, evaluation, permissions, and recovery.",
+  "about": "My projects explore what makes AI systems useful beyond a model response. That means tracing outputs to evidence, measuring quality before changing a pipeline, and giving people control over consequential actions.",
+  "email": "",
+  "linkedin": "",
+  "resume": "",
+  "projects": [
+    {
+      "slug": "document-intelligence-workbench",
+      "title": "Document Intelligence Workbench",
+      "category": "Document intelligence",
+      "description": "A local invoice workspace that connects extracted fields to page evidence. Reviewers can correct a version, approve it, and export the exact approved record.",
+      "detail": "Built around human review, isolated parsing, auditable revisions, and recoverable processing. The project compares deterministic extraction with a local language model and keeps rules as the default after measuring model regression.",
+      "tags": [
+        "Python",
+        "SQLite",
+        "Docker",
+        "OCR"
+      ],
+      "caseStudy": "docs/engineering-case-study.md",
+      "status": "Experimental portfolio release",
+      "featured": true
+    },
+    {
+      "slug": "rag-eval-platform",
+      "title": "RAG Evaluation Platform",
+      "category": "Retrieval & evaluation",
+      "description": "A reproducible comparison of sparse, dense, hybrid, and reranked retrieval, with confidence intervals and regression gates to make quality changes measurable.",
+      "detail": "Evaluations across SciFact, NFCorpus, and FiQA show that the best retrieval strategy changes with the domain. The pipeline connects versioned inputs, cited answers, evaluation reports, and observability.",
+      "tags": [
+        "FastAPI",
+        "pgvector",
+        "BEIR",
+        "OpenTelemetry"
+      ],
+      "caseStudy": "docs/model_card.md",
+      "status": "Published benchmark reports"
+    },
+    {
+      "slug": "realtime-ml-platform",
+      "title": "Real-Time ML Platform",
+      "category": "ML infrastructure",
+      "description": "NYC taxi-duration modeling with validated data, point-in-time features, guarded model promotion, and online prediction serving on Kubernetes.",
+      "detail": "Combines batch training with MLflow model management and FastAPI serving. Includes local load and broker-recovery experiments with documented limits; the model uses completed-trip distance and is not a pre-trip ETA estimator.",
+      "tags": [
+        "MLflow",
+        "Kubernetes",
+        "FastAPI",
+        "Redpanda"
+      ],
+      "caseStudy": "docs/portfolio-walkthrough.md",
+      "status": "Batch training & online serving"
+    },
+    {
+      "slug": "secure-agent-platform",
+      "title": "Secure Agent Platform",
+      "category": "Agent security",
+      "description": "An architecture plan for a workplace-agent lab with application-enforced permissions, reviewable actions, and reproducible prompt-injection evaluations.",
+      "detail": "The public repository currently contains the architecture and implementation plan. It proposes a phased study of legitimate task completion and attack resistance, beginning with structured generation, a frozen task suite, and one tool execution boundary.",
+      "tags": [
+        "Agent architecture",
+        "Scoped permissions",
+        "Evaluation design"
+      ],
+      "caseStudy": "arch_plan/secure-agent-platform-plan.md",
+      "status": "Architecture planned"
+    },
+    {
+      "slug": "deep-research",
+      "title": "Deep Research",
+      "category": "Research agents",
+      "description": "A research backend that takes a question through an approved plan, parallel investigations, evidence review, and a cited report.",
+      "detail": "Application code owns budgets, tool access, recovery, and report validation. Published development examples show quick briefs, broader comparisons, and technical research with recorded evidence and cost.",
+      "tags": [
+        "FastAPI",
+        "Pydantic",
+        "Responses API",
+        "Playwright"
+      ],
+      "caseStudy": "docs/case-study.md",
+      "status": "Published development examples"
+    }
+  ]
+}
