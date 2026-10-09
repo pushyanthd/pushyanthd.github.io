@@ -45,6 +45,7 @@ if data.get("email"):
 
 values = {key: esc(data[key]) for key in ["name", "initials", "focus", "headline", "intro", "about"]}
 values.update(github=esc(github), github_username=esc(data["github"]),
+              linkedin=esc(data.get("linkedin", "https://www.linkedin.com/in/pushyanthd")),
               projects="\n".join(project_html(p, i) for i, p in enumerate(data["projects"], 1)),
               resume_action=resume_action, resume_copy=esc(resume_copy), resume_status=esc(resume_status), socials=socials,
               project_count=str(len(data["projects"])))

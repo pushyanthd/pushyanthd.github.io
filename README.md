@@ -1,6 +1,6 @@
 # Pushyanth Damarapati — Portfolio
 
-A responsive, dependency-free portfolio for GitHub Pages. All five project summaries are grounded in public repositories. No paid hosting, analytics, API, custom domain, or external fonts are required to view the site.
+A responsive, dependency-free portfolio for GitHub Pages. Six project summaries reflect the latest local evidence for each project, including release candidates, evaluation results, and known limits. No paid hosting, analytics, API, custom domain, or external fonts are required to view the site.
 
 ## Preview
 
@@ -18,7 +18,7 @@ Edit `site.json`, then regenerate the page:
 python3 scripts/build.py
 ```
 
-The `focus` line describes the portfolio's engineering topics; it can be replaced with your preferred professional title. Experience and education will be added from the resume once supplied. Optional `email` and `linkedin` fields add contact links when populated.
+The `focus` line describes the portfolio's engineering topics; it can be replaced with your preferred professional title. The current Leidos affiliation is shown without an inferred job title. Experience and education can be expanded when the resume is supplied. Optional `email` and `linkedin` fields add contact links when populated.
 
 ## Add the resume
 

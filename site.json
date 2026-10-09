@@ -4,10 +4,10 @@
   "github": "pushyanthd",
   "focus": "AI & ML engineering",
   "headline": "Building AI systems you can inspect.",
-  "intro": "Retrieval, document intelligence, machine learning, and agent systems. I build the infrastructure around models: evidence, evaluation, permissions, and recovery.",
-  "about": "My projects explore what makes AI systems useful beyond a model response. That means tracing outputs to evidence, measuring quality before changing a pipeline, and giving people control over consequential actions.",
+  "intro": "Retrieval, recommendation, document intelligence, machine learning, and agent systems. I build the infrastructure around models: evidence, evaluation, permissions, and recovery.",
+  "about": "I currently work at Leidos. My independent projects explore what makes AI systems useful beyond a model response: tracing outputs to evidence, measuring quality before changing a pipeline, and giving people control over consequential actions.",
   "email": "",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/pushyanthd",
   "resume": "",
   "projects": [
     {
@@ -15,7 +15,7 @@
       "title": "Document Intelligence Workbench",
       "category": "Document intelligence",
       "description": "A local invoice workspace that connects extracted fields to page evidence. Reviewers can correct a version, approve it, and export the exact approved record.",
-      "detail": "Built around human review, isolated parsing, auditable revisions, and recoverable processing. The project compares deterministic extraction with a local language model and keeps rules as the default after measuring model regression.",
+      "detail": "An experimental local invoice workflow with isolated parsing, evidence-linked review, auditable revisions, and approved exports. Paired tests cover 180 invoices and 100 receipts; rules remain the default because the local model regressed on invoice headers and exact rows. A six-case author pilot completed, with exact required headers on 5/6 cases and exact rows on 19/20. This does not establish production financial correctness or broad vendor accuracy.",
       "tags": [
         "Python",
         "SQLite",
@@ -23,15 +23,30 @@
         "OCR"
       ],
       "caseStudy": "docs/engineering-case-study.md",
-      "status": "Experimental portfolio release",
+      "status": "Experimental v0.1.0 candidate · publication pending",
       "featured": true
+    },
+    {
+      "slug": "recommendation-service",
+      "title": "CPU Recommendation Service",
+      "category": "Recommendation & ranking",
+      "description": "A CPU-only movie recommendation API with chronological evaluation, automatic model selection, cold-start fallback, and verified rollback.",
+      "detail": "Compared popularity, item similarity, and ALS for 1,188 MovieLens users. Item similarity improved final NDCG@10 by 11.97%, but its 3.41% validation gain missed the frozen 10% objective, so popularity remains selected. The selected snapshot served 5,000 HTTP requests with zero failures and 11.65 ms client P95 on Apple M1. This is a local benchmark/demo, not evidence of online impact or production security; independent scanning still reports a HIGH zlib advisory.",
+      "tags": [
+        "FastAPI",
+        "NumPy / SciPy",
+        "CPU ALS",
+        "Docker"
+      ],
+      "caseStudy": "docs/engineering-case-study.md",
+      "status": "v1.0.0 prepared · publication pending"
     },
     {
       "slug": "rag-eval-platform",
       "title": "RAG Evaluation Platform",
       "category": "Retrieval & evaluation",
       "description": "A reproducible comparison of sparse, dense, hybrid, and reranked retrieval, with confidence intervals and regression gates to make quality changes measurable.",
-      "detail": "Evaluations across SciFact, NFCorpus, and FiQA show that the best retrieval strategy changes with the domain. The pipeline connects versioned inputs, cited answers, evaluation reports, and observability.",
+      "detail": "Full BEIR test sets across SciFact, NFCorpus, and FiQA show that the best nDCG@10 point estimate changes by domain: dense retrieval leads on SciFact and FiQA, while reranked hybrid leads on NFCorpus. The repo also includes confidence intervals, paired comparisons, a regression gate, cited-answer evaluation, and observability. Generated-answer scores are benchmark results, not proof of judge validity or general factual accuracy.",
       "tags": [
         "FastAPI",
         "pgvector",
@@ -39,14 +54,14 @@
         "OpenTelemetry"
       ],
       "caseStudy": "docs/model_card.md",
-      "status": "Published benchmark reports"
+      "status": "Published benchmark reports · experimental answer evaluation"
     },
     {
       "slug": "realtime-ml-platform",
       "title": "Real-Time ML Platform",
       "category": "ML infrastructure",
       "description": "NYC taxi-duration modeling with validated data, point-in-time features, guarded model promotion, and online prediction serving on Kubernetes.",
-      "detail": "Combines batch training with MLflow model management and FastAPI serving. Includes local load and broker-recovery experiments with documented limits; the model uses completed-trip distance and is not a pre-trip ETA estimator.",
+      "detail": "The v0.1.0 candidate packages reproducible NYC taxi-duration training and guarded online serving. On the fixed April holdout, the approved model reached 187.18 s MAE, 25.78% below the declared baseline. Local kind testing served 10,000 requests at 100 requests/s with 7.99 ms client P95 and no errors or dropped requests. These results use one local kind node; completed-trip distance makes this unsuitable as a pre-trip ETA claim.",
       "tags": [
         "MLflow",
         "Kubernetes",
@@ -54,21 +69,21 @@
         "Redpanda"
       ],
       "caseStudy": "docs/portfolio-walkthrough.md",
-      "status": "Batch training & online serving"
+      "status": "v0.1.0 candidate · publication pending"
     },
     {
       "slug": "secure-agent-platform",
       "title": "Secure Agent Platform",
       "category": "Agent security",
-      "description": "An architecture plan for a workplace-agent lab with application-enforced permissions, reviewable actions, and reproducible prompt-injection evaluations.",
-      "detail": "The public repository currently contains the architecture and implementation plan. It proposes a phased study of legitimate task completion and attack resistance, beginning with structured generation, a frozen task suite, and one tool execution boundary.",
+      "description": "A resumable agent evaluation platform with application-owned tool boundaries, scoped permissions, reviewable actions, and a frozen prompt-injection benchmark.",
+      "detail": "The completed 400-trial evaluation measured clean-task success at 104/160 for the defended system; two defended attacks remained unresolved and the release gate failed. A later eight-trial utility pilot was also rejected. The repository preserves the failed results and limitations rather than treating the platform as release-ready.",
       "tags": [
         "Agent architecture",
         "Scoped permissions",
         "Evaluation design"
       ],
       "caseStudy": "arch_plan/secure-agent-platform-plan.md",
-      "status": "Architecture planned"
+      "status": "400-trial evaluation complete · release gate failed"
     },
     {
       "slug": "deep-research",
@@ -83,7 +98,7 @@
         "Playwright"
       ],
       "caseStudy": "docs/case-study.md",
-      "status": "Published development examples"
+      "status": "v0.2.0 · published development examples"
     }
   ]
 }
